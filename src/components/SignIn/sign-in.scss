@@ -1,0 +1,31 @@
+.form-wrapper {
+  border: 1px solid slategray;
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: right;
+
+  div {
+    margin-bottom: 1rem;
+
+    label {
+      margin-right: .5rem;
+    }
+  }
+
+  button {
+    background-color: rgb(41, 190, 116);
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: none;
+  }
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
