@@ -38,6 +38,9 @@ app.listen({ port: apiPort }, () => {
 })
 
 web.use(express.static("dist"));
+web.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../dist", "index.html"));
+})
 web.listen({ port: webPort }, () => {
   console.log(`Web has started ${baseUrl}:${webPort}`);
 })

@@ -1,20 +1,12 @@
 import React from "react";
-import ListItem from "./components/ListItem";
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from "./routes";
 import "./app.scss";
-
-const fakeData = {
-  id: 1,
-  task: "do some stuff",
-  complete: false,
-  dueDate: null
-};
 
 export default () => {
   return (
-    <div className="app-wrapper">
-      <ul>
-        <ListItem {...fakeData} />
-      </ul>
-    </div>
+    <Router>
+      <Routes />
+    </Router>
   )
 }
