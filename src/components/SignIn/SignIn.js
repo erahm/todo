@@ -17,13 +17,13 @@ export default () => {
     if (name === 'email' && value !== email) {
       setEmail(value);
     }
-    else if (name === 'password' && value !== passowrd) {
+    else if (name === 'password' && value !== password) {
       setPassword(value);
     }
   };
 
   return (
-    <div className="sign-up-form">
+    <div className="sign-in-form">
       <h1>Sign In</h1>
       <div className="form-wrapper">
         <form>
